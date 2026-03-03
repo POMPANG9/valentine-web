@@ -120,23 +120,34 @@
       right:14px;
       background:#fff;
       border:1px solid rgba(0,0,0,0.1);
-      padding:10px 12px;
-      border-radius:999px;
+      padding:12px 14px;
+      border-radius:20px;
       box-shadow:0 6px 15px rgba(0,0,0,0.08);
+      display:flex;
+      flex-direction:column;
+      align-items:flex-end;
+      gap:6px;
+      font-size:14px;
+}
+
+  .music-row{
       display:flex;
       gap:10px;
       align-items:center;
-      font-size:14px;
-    }
-    .music button{
-      border:0;
-      background:#ff4d6d;
-      color:#fff;
-      padding:8px 12px;
-      border-radius:999px;
-      cursor:pointer;
+}
+
+  .support-link{
+      font-size:12px;
       font-weight:700;
-    }
+      text-decoration:none;
+      color:#ff4d6d;
+      transition:.2s;
+}
+
+  .support-link:hover{
+      opacity:.7;
+      transform:translateY(-1px);
+}
   </style>
 </head>
 
@@ -144,8 +155,17 @@
 
   <!-- music (optional) -->
   <div class="music">
+  <div class="music-row">
     <span>Music</span>
     <button id="musicBtn">Play</button>
+  </div>
+
+  <a href="https://buymeacoffee.com/pompamg9"
+     target="_blank"
+     rel="noopener noreferrer"
+     class="support-link">
+     Fuel the Love ❤️
+  </a>
   </div>
 
   <!-- main card -->
@@ -156,12 +176,6 @@
     <div class="buttons">
       <a href="#" class="btn yes" id="yesBtn">Yes</a>
       <a href="#" class="btn no" id="noBtn">No</a>
-       <a href="https://buymeacoffee.com/pompamg9"
-     class="coffee-link"
-     target="_blank"
-     rel="noopener noreferrer">
-    ☕ Buy Me a Coffee
-  </a>
     </div>
   </div>
 
@@ -247,6 +261,7 @@
 
 </body>
 </html>
+
 
 
 
